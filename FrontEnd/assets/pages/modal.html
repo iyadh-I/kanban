@@ -1,0 +1,43 @@
+<body>
+    <aside id="modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+        <div class="modal-wrapper modal-stop form">
+            <button class="modal-top-icons modal-close">
+                <i class="fa-solid fa-xmark"></i><span class="sr-only">Fermer le menu édition</span>
+            </button>
+            <div class="modal1">
+                <p class="modal-title">Galerie photo</p>
+                <div class="modal-gallery"></div>
+                <div class="modal-grey-line"></div>
+                <form>
+                    <input type="submit" value="Ajouter une photo">
+                </form>
+                <p class="modal-delete">Supprimer la galerie</p>
+            </div>
+            <div class="modal2">
+                <button class="modal-top-icons modal-arrow">
+                    <i class="fa-solid fa-arrow-left"></i><span class="sr-only">Retour à la galerie</span>
+                </button>
+                <p class="modal-title">Ajout photo</p>
+                <form id="add-works">
+                    <label for="image" id="image-container">
+                        <i class="fa-regular fa-image add-works-icon"></i>
+                        <p class="add-works-btn">+ Ajouter photo</p>
+                        <p class="add-works-size">jpg, png : 4mo max</p>
+                        <img src="#" alt="aperçu" class="image-preview">
+                    </label>
+                    <input type="file" name="image" id="image" accept="image/png, image/jpeg">
+                    <label for="title">Titre</label>
+                    <input type="text" name="title" id="title">
+                    <label for="category">Catégorie</label>
+                    <select name="category" id="category">
+                        <option value="empty"></option>
+                        <!-- Ajout des catégories depuis l'API -->
+                    </select>
+                    <div class="modal-grey-line"></div>
+                    <input id="validate" type="submit" value="Valider" style="background-color: #A7A7A7;">
+                </form>
+                <p id="error"></p>
+            </div>
+        </div>
+    </aside>
+</body>
